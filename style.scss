@@ -47,6 +47,16 @@ mixins
     background-size: cover;
 }
 
+@mixin underlince($color, $width) {
+    background: $color;
+    width: $width;
+    display: block;
+    height: 2px;
+    content: "";
+    margin: 0 0 20px 0;
+
+}
+
 
 /*********************
 basic styles
@@ -127,19 +137,23 @@ button {
     }
 
     ul {
-        @include flex(space-between, central);
-        background-position: center;
-        background-size: cover;
-        background-repeat: none;
+        @include flex(space-between, center);
 
-        li {
+        a {
+            background: $primary;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            display: inline-block;
             text-align: center;
-            cursor: pointer;
-            margin-right: 30px;
-            color: $secondary;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 40px;
+            color: $white;
 
-            i {
-                color: $primary;
+            &:hover {
+                box-shadow: 0 0 10px $lightGray;
+                background: $secondary;
             }
         }
     }
@@ -171,9 +185,74 @@ button {
         width: 50%;
         margin: auto;
         height: 70vh;
+    }
+}
 
+/***services***/
+.services {
+    @include flex(center, center);
+    margin-top: -100px;
 
+    article {
+        flex: 0 0 25%;
+        color: $white;
+        text-align: center;
+        padding: 50px 0;
 
+        i {
+            font-size: 4rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+    }
+
+    article:nth-child(odd) {
+        background: $primary;
+    }
+
+    article:nth-child(even) {
+        background: $secondary
+    }
+}
+
+/***contact***/
+.contact {
+    @include flex(space-between, center);
+
+    article {
+        flex: 0 0 33%;
+
+        h3 {
+            font-size: 2rem;
+            margin: 20px 0;
+            color: $primary;
+
+            &::after {
+                @include underlince($primary, 50px);
+            }
+
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: $secondary;
+        }
 
     }
+}
+
+.map {
+    iframe {
+        display: block;
+    }
+}
+
+footer {
+    background: $primary;
+    text-align: center;
+    padding: 20 0;
 }
