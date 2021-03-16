@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+/*********************
+mixins
+*********************/
+/*********************
+basic styles
+*********************/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+a:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 400;
+  text-shadow: 0 0 2px #080033;
+}
+
+li:hover {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: scale(120%);
+          transform: scale(120%);
+}
+
+button {
+  padding: 10px 40px;
+  background: transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #fff;
+  color: #3177b5;
+}
+
+/***header***/
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 0;
+}
+
+.topbar .logo {
+  color: #3177b5;
+}
+
+.topbar .logo span {
+  font-style: italic;
+  color: #33a5d7;
+  font-weight: 800;
+}
+
+.topbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: central;
+      -ms-flex-align: central;
+          align-items: central;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+.topbar ul li {
+  text-align: center;
+  cursor: pointer;
+  margin-right: 30px;
+  color: #33a5d7;
+}
+
+.topbar ul li i {
+  color: #3177b5;
+}
+
+/***mainHeader***/
+.mainHeader {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 119, 181, 0.7)), to(rgba(49, 119, 181, 0.7))), url(img/header.jpg);
+  background-image: linear-gradient(rgba(49, 119, 181, 0.7), rgba(49, 119, 181, 0.7)), url(img/header.jpg);
+  height: 90vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.mainHeader nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainHeader nav ul a {
+  color: #fff;
+  margin-right: 50px;
+}
+
+.mainHeader hgroup {
+  padding: 100px 0;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  height: 70vh;
+}
+/*# sourceMappingURL=style.css.map */
