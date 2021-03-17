@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-
     <section class="topbar container">
         <a class="logo" href="index.php">Law <span>Office</span></a>
         <ul>
