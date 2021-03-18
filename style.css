@@ -373,7 +373,7 @@ footer {
   color: #fff;
   transition: 0.3s ease;
   background: #3177b5;
-  flex: 0 0 100%;
+  flex: 0 0 5%;
   border: 2px solid #3177b5;
 }
 .contactform article:nth-child(2) form button:hover {
@@ -585,4 +585,27 @@ footer {
 .blog article:last-child .categories h4 {
   margin: 0;
   color: #000;
+}
+.testimonials {
+  background: #080033;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+.testimonials h2 {
+  text-transform: uppercase;
+}
+.testimonials .owl-carousel {
+  width: 50%;
+  margin: 0 auto;
+}
+.testimonials .owl-carousel p {
+  padding: 30px 0;
+}
+.testimonials .owl-carousel h3 {
+  margin-bottom: 30px;
+  color: #fff;
+}
+.testimonials .owl-carousel h3::after {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

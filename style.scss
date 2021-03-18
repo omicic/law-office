@@ -402,7 +402,7 @@ footer {
             button {
                 @include btn;
                 background: $primary;
-                flex: 0 0 100%;
+                flex: 0 0 5%;
                 border: 2px solid $primary;
             }
         }
@@ -599,6 +599,41 @@ footer {
             }
 
             a {}
+        }
+    }
+}
+
+.testimonials {
+    background: $tertiary;
+    color: $white;
+    padding: $padding;
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+    }
+
+    .owl-carousel {
+        width: 50%;
+        margin: 0 auto;
+
+
+        p {
+            padding: 30px 0;
+            ;
+        }
+
+        h3 {
+            margin-bottom: 30px;
+            color: $white;
+
+            &::after {
+
+
+                display: none;
+
+
+            }
         }
     }
 }
