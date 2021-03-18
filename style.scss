@@ -56,10 +56,6 @@ mixins
 
 }
 
-
-
-
-
 /*********************
 basic styles
 *********************/
@@ -339,6 +335,82 @@ footer {
     }
 }
 
+/***contact***/
+.contactform {
+    @include flex(center, center);
+    color: $secondary;
+
+
+    article:nth-child(1) {
+        flex: 0 0 50%;
+        height: 50vh;
+        background-image: linear-gradient(rgba($tertiary, .7), rgba($tertiary, .7)), url(img/about.jpg);
+        @include bgImg(50vh);
+        color: $white;
+
+        text-align: center;
+        @include flex(center, center);
+
+        h2 {
+            font-weight: 500;
+            border: 1px solid $white;
+            align-items: center;
+            padding: 40px;
+
+
+            span {
+                font-weight: 800;
+            }
+        }
+    }
+
+    article:nth-child(2) {
+        flex: 0 0 50%;
+        background-color: $gray;
+
+        height: 50vh;
+
+        @include flex(center, center);
+
+
+        form {
+            width: 60%;
+            @include flex(space-between, center);
+
+            input {
+                border: 2px solid $primary;
+                padding: 10px;
+                font-size: 1rem;
+                margin-bottom: 20px;
+
+                &[type="text"] {
+                    flex: 0 0 48%;
+                }
+
+                &[type="email"] {
+                    flex: 0 0 100%;
+                }
+            }
+
+            textarea {
+                border: 2px solid $primary;
+                padding: 10px;
+                font-size: 1rem;
+                flex: 0 0 100%;
+            }
+
+            button {
+                @include btn;
+                background: $primary;
+                flex: 0 0 100%;
+                border: 2px solid $primary;
+            }
+        }
+    }
+
+}
+
+
 /***team***/
 .team {
     background-image: linear-gradient(rgba($black, .7), rgba($black, .7)), url(img/about2.jpg);
@@ -525,6 +597,8 @@ footer {
                 margin: 0;
                 color: $black;
             }
+
+            a {}
         }
     }
 }

@@ -292,6 +292,95 @@ footer {
   font-weight: 800;
 }
 
+/***contact***/
+.contactform {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #33a5d7;
+}
+.contactform article:nth-child(1) {
+  flex: 0 0 50%;
+  height: 50vh;
+  background-image: linear-gradient(rgba(8, 0, 51, 0.7), rgba(8, 0, 51, 0.7)), url(img/about.jpg);
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.contactform article:nth-child(1) h2 {
+  font-weight: 500;
+  border: 1px solid #fff;
+  align-items: center;
+  padding: 40px;
+}
+.contactform article:nth-child(1) h2 span {
+  font-weight: 800;
+}
+.contactform article:nth-child(2) {
+  flex: 0 0 50%;
+  background-color: #eaeaea;
+  height: 50vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.contactform article:nth-child(2) form {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.contactform article:nth-child(2) form input {
+  border: 2px solid #3177b5;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.contactform article:nth-child(2) form input[type=text] {
+  flex: 0 0 48%;
+}
+.contactform article:nth-child(2) form input[type=email] {
+  flex: 0 0 100%;
+}
+.contactform article:nth-child(2) form textarea {
+  border: 2px solid #3177b5;
+  padding: 10px;
+  font-size: 1rem;
+  flex: 0 0 100%;
+}
+.contactform article:nth-child(2) form button {
+  padding: 10px 40px;
+  background: transparent;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-top: 30px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s ease;
+  background: #3177b5;
+  flex: 0 0 100%;
+  border: 2px solid #3177b5;
+}
+.contactform article:nth-child(2) form button:hover {
+  background: #fff;
+  color: #3177b5;
+}
+
 /***team***/
 .team {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/about2.jpg);

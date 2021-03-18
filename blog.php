@@ -1,7 +1,5 @@
-<?php 
-require 'partials/header.php';
+<?php include 'partials/header.php';?>
 
-?>
 
 <section class="blog">
     <article>
@@ -46,6 +44,4 @@ require 'partials/header.php';
     </article>
 </section>
 
-</body>
-
-</html>
+<?php include('partials/footer.php')?>

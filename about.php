@@ -1,4 +1,5 @@
 <?php include 'partials/header.php'?>
+
 <section class="about">
     <article>
         <h3>About us</h3>
