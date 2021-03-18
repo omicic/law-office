@@ -53,7 +53,6 @@ mixins
     display: block;
     height: 2px;
     content: "";
-    margin: 0 0 20px 0;
 
 }
 
@@ -130,18 +129,17 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    margin: 20px 0;
     color: $primary;
 
     &::after {
         @include underline($primary, 50px);
+        margin: 0 auto 20px auto;
     }
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
-    margin: 30px 0;
 }
 
 
@@ -192,7 +190,7 @@ img {
 .mainHeader {
     background-image: linear-gradient(rgba($primary, .7), rgba($primary, .7)), url(img/header.jpg);
 
-    @include bgImg(90vh);
+    @include bgImg(50vh);
 
     nav {
 
@@ -207,20 +205,23 @@ img {
     }
 
     hgroup {
-        padding: $padding;
-        color: $white;
         @include flex(center, center, column);
+        color: $white;
+        width: 40%;
         text-align: center;
-        width: 50%;
+
+
         margin: auto;
-        height: 70vh;
+        height: 50vh;
+
+
     }
 }
 
 /***services***/
 .services {
     @include flex(center, center);
-    margin-top: -100px;
+    margin-top: -50px;
 
     article {
         flex: 0 0 25%;
@@ -240,29 +241,23 @@ img {
 
     article:nth-child(odd) {
         background: $primary;
+
+        h3 {
+            color: $secondary;
+        }
     }
 
     article:nth-child(even) {
-        background: $secondary
-    }
-}
+        background: $secondary;
 
-/***contact***/
-.contact {
-    @include flex(space-between, center);
-
-    article {
-        flex: 0 0 33%;
-
-        p {
-            font-size: 1.5rem;
-            margin: 10px 0;
-            color: $secondary;
+        h3 {
+            color: $primary;
         }
-
     }
 }
 
+
+/***map***/
 .map {
     iframe {
         display: block;
@@ -291,6 +286,10 @@ footer {
 
         h3 {
             color: $secondary;
+
+            &::after {
+                margin: 0 0 20px 0;
+            }
         }
 
         p {
@@ -306,14 +305,16 @@ footer {
         background-image: linear-gradient(rgba($tertiary, .7), rgba($tertiary, .7)), url(img/about.jpg);
         @include bgImg(50vh);
         color: $white;
-        @include flex(center, center);
+
         text-align: center;
+        @include flex(center, center);
 
         h2 {
             font-weight: 500;
             border: 1px solid $white;
             align-items: center;
-            padding: 10%;
+            padding: 40px;
+
 
             span {
                 font-weight: 800;
@@ -322,29 +323,102 @@ footer {
     }
 }
 
-/* /***team***/
+/***team***/
 .team {
     background-image: linear-gradient(rgba($black, .7), rgba($black, .7)), url(img/about2.jpg);
     @include bgImg(50vh);
-    padding: 7% 10%;
     height: 50vh;
     text-align: center;
     color: $white;
-    align-items: center;
+    @include flex(center, center, column);
 
     h3 {
-
         color: $white;
         text-align: center;
 
         &::after {
             @include underline($white, 50px);
-            margin: auto;
         }
     }
 
     p {
         width: 50%;
-        margin: 30px auto;
     }
+}
+
+.peoples {
+
+    background-color: $gray;
+    text-align: center;
+    color: $white;
+    margin-top: -50px;
+
+    .container {
+        @include flex(center, center);
+
+        article {
+            flex: 0 0 25%;
+
+            position: relative;
+            top: -100px;
+
+            img {
+                width: 100%;
+            }
+
+            .text {
+                padding: 40px;
+                @include flex(center, center, column);
+
+                h3 {
+                    font-size: 2rem;
+                    color: $white;
+
+                    &::after {
+                        @include underline($white, 150px);
+                    }
+                }
+            }
+        }
+
+        article:nth-child(odd) {
+            background-color: $primary;
+
+            button {
+                background-color: $secondary;
+                border: none;
+                width: 50%;
+
+                &:hover {
+                    transition: $transition;
+                    background: $white;
+                    color: $primary;
+                }
+            }
+        }
+
+        article:nth-child(even) {
+            background-color: $secondary;
+
+
+            button {
+                background-color: $primary;
+                border: none;
+                width: 50%;
+
+                &:hover {
+                    transition: $transition;
+                    background: $white;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+}
+
+
+/***contact***/
+.contact {
+    @include flex(space-between, center);
+    padding: 50px;
 }

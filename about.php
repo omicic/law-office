@@ -22,4 +22,66 @@
     <br>
 </section>
 
+<section class="peoples">
+    <div class="container">
+        <article>
+            <img src="img/people1.jpg" alt="">
+            <div class="text">
+                <h3>etta etta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae alias aut. Aliquam, itaque
+                    tempora
+                    possimus ut neque aliquid qui esse explicabo repudiandae consectetur magni iusto labore dolore.
+                    Officiis,
+                    assumenda!</p>
+                <button>learn more</button>
+                <button>contact</button>
+            </div>
+        </article>
+        <article>
+            <img src="img/people2.jpg" alt="">
+            <div class="text">
+                <h3>etta etta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae alias aut. Aliquam, itaque
+                    tempora
+                    possimus ut neque aliquid qui esse explicabo repudiandae consectetur magni iusto labore dolore.
+                    Officiis,
+                    assumenda!</p>
+                <button>learn more</button>
+                <button>contact</button>
+            </div>
+        </article>
+        <article>
+            <img src="img/people3.jpg" alt="">
+            <div class="text">
+                <h3>etta etta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae alias aut. Aliquam, itaque
+                    tempora
+                    possimus ut neque aliquid qui esse explicabo repudiandae consectetur magni iusto labore dolore.
+                    Officiis,
+                    assumenda!</p>
+                <button>learn more</button>
+                <button>contact</button>
+            </div>
+        </article>
+        <article>
+            <img src=" img/people4.jpg" alt="">
+            <div class="text">
+                <h3>etta etta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam recusandae alias aut. Aliquam,
+                    itaque
+                    tempora
+                    possimus ut neque aliquid qui esse explicabo repudiandae consectetur magni iusto labore dolore.
+                    Officiis,
+                    assumenda!</p>
+                <button>learn more</button>
+                <button>contact</button>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class=>
+
+</section>
+
 <?php include 'partials/footer.php'?>
