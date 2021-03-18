@@ -249,6 +249,10 @@ img {
             font-size: 2rem;
             margin: 20px 0;
         }
+
+        p {
+            margin: auto 20px;
+        }
     }
 
     article:nth-child(odd) {
@@ -467,4 +471,10 @@ footer {
 
         }
     }
+}
+
+.blog {
+    background-color: $gray;
+
+    .container {}
 }

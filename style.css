@@ -210,6 +210,9 @@ img {
   font-size: 2rem;
   margin: 20px 0;
 }
+.services article p {
+  margin: auto 20px;
+}
 .services article:nth-child(odd) {
   background: #3177b5;
 }
@@ -434,4 +437,8 @@ footer {
 .consulatation .container div p {
   margin: 20px;
   padding: 20px;
+}
+
+.blog {
+  background-color: #eaeaea;
 }/*# sourceMappingURL=style.css.map */

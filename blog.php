@@ -1,4 +1,10 @@
-<?php include 'partials/header.php'?>
+<?php 
+require 'partials/header.php';
+echo "<h1>". 'blog' . '</h1>'; 
+?>
 
-<h1>Blog</h1>
-<?php include 'partials/footer.php'?>
+
+
+</body>
+
+</html>
