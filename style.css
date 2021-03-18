@@ -82,6 +82,7 @@ h2 {
 h3 {
   font-size: 2rem;
   color: #3177b5;
+  margin-top: 30px;
 }
 h3::after {
   background: #3177b5;
@@ -92,8 +93,22 @@ h3::after {
   margin: 0 auto 20px auto;
 }
 
+h4 {
+  font-size: 1.4rem;
+  color: #3177b5;
+  margin-top: 20px;
+}
+h4::after {
+  background: #3177b5;
+  width: 50px;
+  display: block;
+  height: 2px;
+  content: "";
+  margin: 0 auto 20px auto;
+}
+
 p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -336,6 +351,7 @@ footer {
 .peoples .container article .text h3 {
   font-size: 2rem;
   color: #fff;
+  margin: 30px;
 }
 .peoples .container article .text h3::after {
   background: #fff;
@@ -379,4 +395,43 @@ footer {
   align-items: center;
   flex-direction: row;
   padding: 50px;
+}
+
+.consulatation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3177b5;
+  text-align: center;
+}
+.consulatation h3 {
+  color: #fff;
+}
+.consulatation p {
+  color: black;
+}
+.consulatation .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 30px auto;
+}
+.consulatation .container div {
+  flex: 0 0 24%;
+  background-color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.consulatation .container div p {
+  margin: 20px;
+  padding: 20px;
 }/*# sourceMappingURL=style.css.map */

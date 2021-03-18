@@ -80,7 +80,56 @@
     </div>
 </section>
 
-<section class=>
+<section class="consulatation">
+    <article>
+        <h3>Type of personal injury and accident cades we handle</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda <br> sapiente vel itaque dolores
+            quod
+            porro quidem error inventore sunt.</p>
+    </article>
+    <article class="container">
+        <div>
+            <h4>Personal injury</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, consectetur dolorum itaque aspernatur
+                reprehenderit unde laborum, culpa sed delectus obcaecati tempore fugit numquam velit ea.</p>
+        </div>
+        <div>
+            <h4>Personal injury</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, consectetur dolorum itaque aspernatur
+                reprehenderit unde laborum, culpa sed delectus obcaecati tempore fugit numquam velit ea.</p>
+        </div>
+        <div>
+            <h4>Personal injury</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, consectetur dolorum itaque aspernatur
+                reprehenderit unde laborum, culpa sed delectus obcaecati tempore fugit numquam velit ea.</p>
+        </div>
+        <div>
+            <h4>Personal injury</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, consectetur dolorum itaque aspernatur
+                reprehenderit unde laborum, culpa sed delectus obcaecati tempore fugit numquam velit ea.</p>
+        </div>
+        <div>
+            <h4>Personal injury</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, consectetur dolorum itaque aspernatur
+                reprehenderit unde laborum, culpa sed delectus obcaecati tempore fugit numquam velit ea.</p>
+        </div>
+        <div>
+            <h4>Personal injury</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, consectetur dolorum itaque aspernatur
+                reprehenderit unde laborum, culpa sed delectus obcaecati tempore fugit numquam velit ea.</p>
+        </div>
+        <div>
+            <h4>Personal injury</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, consectetur dolorum itaque aspernatur
+                reprehenderit unde laborum, culpa sed delectus obcaecati tempore fugit numquam velit ea.</p>
+        </div>
+        <div>
+            <h4>Personal injury</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, consectetur dolorum itaque aspernatur
+                reprehenderit unde laborum, culpa sed delectus obcaecati tempore fugit numquam velit ea.</p>
+        </div>
+
+    </article>
 
 </section>
 
