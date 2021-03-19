@@ -210,6 +210,10 @@ img {
 
     @include bgImg(50vh);
 
+    @media(max-width:767px) {
+        @include bgImg(70vh);
+    }
+
     nav {
 
         ul {
@@ -325,6 +329,10 @@ footer {
     @include flex(center, center);
     color: $secondary;
 
+    @media(max-width:767px) {
+        @include flex(center, center, column);
+    }
+
 
     article:nth-child(1) {
         flex: 0 0 50%;
@@ -347,6 +355,11 @@ footer {
             padding-bottom: 20px;
         }
 
+        @media(max-width:767px) {
+            a {
+                padding-bottom: 50px;
+            }
+        }
     }
 
     article:nth-child(2) {
@@ -354,6 +367,7 @@ footer {
         height: 50vh;
         background-image: linear-gradient(rgba($tertiary, .7), rgba($tertiary, .7)), url(img/about.jpg);
         @include bgImg(50vh);
+
         color: $white;
 
         text-align: center;
@@ -365,10 +379,23 @@ footer {
             align-items: center;
             padding: 40px;
 
-
             span {
                 font-weight: 800;
             }
+        }
+
+        @media(max-width:767px) {
+            @include bgImg(70vh);
+
+            h2 {
+                border: 1px solid $white;
+                padding: 30px;
+
+                span {
+                    font-weight: 800;
+                }
+            }
+
         }
     }
 }
@@ -469,6 +496,25 @@ footer {
     p {
         width: 50%;
     }
+
+
+    @media(max-width:767px) {
+        @include flex(space-between, center, column);
+        @include bgImg(70vh);
+
+        h3 {
+            font-size: 1.8rem;
+            padding-bottom: 20px;
+        }
+
+        br {}
+
+        p {
+            width: 80%;
+        }
+
+    }
+
 }
 
 .peoples {
@@ -477,6 +523,10 @@ footer {
     text-align: center;
     color: $white;
     margin-top: -50px;
+
+    @media(max-width:767px) {
+        margin-top: 0;
+    }
 
     .container {
         @include flex(center, center);
@@ -506,6 +556,17 @@ footer {
             }
         }
 
+        h2 {
+            font-weight: 500;
+            border: 1px solid $white;
+            align-items: center;
+            padding: 40px;
+
+            span {
+                font-weight: 800;
+            }
+        }
+
         article:nth-child(odd) {
             background-color: $primary;
 
@@ -525,7 +586,6 @@ footer {
         article:nth-child(even) {
             background-color: $secondary;
 
-
             button {
                 background-color: $primary;
                 border: none;
@@ -539,7 +599,41 @@ footer {
             }
         }
     }
+
+    @media(max-width:767px) {
+
+        .container {
+            @include flex(center, center, column);
+            position: none;
+
+            article {
+                flex: 1;
+                position: none;
+                top: 0px;
+            }
+
+            h2 {
+                padding: 0px;
+            }
+
+            article:nth-child(odd) {
+                button {
+
+                    width: 80%;
+                }
+            }
+
+            article:nth-child(even) {
+                button {
+                    width: 80%;
+                }
+            }
+        }
+
+    }
+
 }
+
 
 /***contact***/
 .contact {
@@ -547,11 +641,10 @@ footer {
     padding: 50px;
 
     @media(max-width:767px) {
-        padding-bottom: 70px;
-
         h3 {
             font-size: 1.8rem;
         }
+
 
     }
 }

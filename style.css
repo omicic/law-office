@@ -173,6 +173,13 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 767px) {
+  .mainHeader {
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+  }
+}
 .mainHeader nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -292,6 +299,15 @@ footer {
   flex-direction: row;
   color: #33a5d7;
 }
+@media (max-width: 767px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .about article:nth-child(1) {
   flex: 0 0 50%;
   background-color: #eaeaea;
@@ -312,6 +328,11 @@ footer {
 .about article:nth-child(1) p {
   padding-right: 10%;
   padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .about article:nth-child(1) a {
+    padding-bottom: 50px;
+  }
 }
 .about article:nth-child(2) {
   flex: 0 0 50%;
@@ -336,6 +357,20 @@ footer {
 }
 .about article:nth-child(2) h2 span {
   font-weight: 800;
+}
+@media (max-width: 767px) {
+  .about article:nth-child(2) {
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .about article:nth-child(2) h2 {
+    border: 1px solid #fff;
+    padding: 30px;
+  }
+  .about article:nth-child(2) h2 span {
+    font-weight: 800;
+  }
 }
 
 /***contact***/
@@ -456,12 +491,36 @@ footer {
 .team p {
   width: 50%;
 }
+@media (max-width: 767px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .team h3 {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+  }
+  .team p {
+    width: 80%;
+  }
+}
 
 .peoples {
   background-color: #eaeaea;
   text-align: center;
   color: #fff;
   margin-top: -50px;
+}
+@media (max-width: 767px) {
+  .peoples {
+    margin-top: 0;
+  }
 }
 .peoples .container {
   display: flex;
@@ -498,6 +557,15 @@ footer {
   height: 2px;
   content: "";
 }
+.peoples .container h2 {
+  font-weight: 500;
+  border: 1px solid #fff;
+  align-items: center;
+  padding: 40px;
+}
+.peoples .container h2 span {
+  font-weight: 800;
+}
 .peoples .container article:nth-child(odd) {
   background-color: #3177b5;
 }
@@ -524,6 +592,30 @@ footer {
   background: #fff;
   color: #33a5d7;
 }
+@media (max-width: 767px) {
+  .peoples .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: none;
+  }
+  .peoples .container article {
+    flex: 1;
+    position: none;
+    top: 0px;
+  }
+  .peoples .container h2 {
+    padding: 0px;
+  }
+  .peoples .container article:nth-child(odd) button {
+    width: 80%;
+  }
+  .peoples .container article:nth-child(even) button {
+    width: 80%;
+  }
+}
 
 /***contact***/
 .contact {
@@ -535,9 +627,6 @@ footer {
   padding: 50px;
 }
 @media (max-width: 767px) {
-  .contact {
-    padding-bottom: 70px;
-  }
   .contact h3 {
     font-size: 1.8rem;
   }
