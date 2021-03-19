@@ -40,7 +40,7 @@ ul {
 
 li:hover {
   transition: 0.3s ease;
-  transform: scale(120%);
+  transform: scale(105%);
 }
 
 button {
@@ -671,6 +671,28 @@ footer {
   margin: 20px;
   padding: 20px;
 }
+@media (max-width: 767px) {
+  .consulatation .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+  }
+  .consulatation .container div {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .consulatation .container div p {
+    margin: 10px;
+    padding: 10px;
+  }
+}
 
 /***blog***/
 .blog {
@@ -729,6 +751,81 @@ footer {
   margin: 0;
   color: #000;
 }
+.blog article:last-child .categories a:hover {
+  transition: 0.3s ease;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 10px 10px;
+  }
+  .blog article:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog article:first-child article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .blog article:first-child article div:last-child {
+    padding: 10px;
+  }
+  .blog article:first-child article div:last-child h4 {
+    padding-left: 10px;
+  }
+  .blog article:first-child article div:last-child p:last-child::after {
+    background: #3177b5;
+    width: 20%;
+    display: block;
+    height: 2px;
+    content: "";
+    margin: auto;
+    margin-top: 30px;
+  }
+  .blog article:last-child .categories {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog article:last-child .categories h4 {
+    color: #fff;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .blog article:last-child .categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+  .blog article:last-child .categories ul li {
+    flex: 0 0 22%;
+  }
+  .blog article:last-child .categories ul li a {
+    font-size: 0.9rem;
+    margin-right: 25px;
+  }
+}
+
 .testimonials {
   background: #080033;
   color: #fff;

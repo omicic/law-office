@@ -97,7 +97,7 @@ ul {
 li {
     &:hover {
         transition: $transition;
-        transform: scale(120%);
+        transform: scale(105%);
     }
 }
 
@@ -683,6 +683,27 @@ footer {
 
         }
     }
+
+    @media(max-width:767px) {
+        .container {
+            @include flex(space-between, center, column);
+            margin: 30px auto;
+
+
+            div {
+                margin-top: 30px;
+
+                @include flex(center, center, column);
+
+                p {
+                    margin: 10px;
+                    padding: 10px;
+                }
+
+            }
+        }
+    }
+
 }
 
 /***blog***/
@@ -737,7 +758,79 @@ footer {
                 color: $black;
             }
 
-            a {}
+            a {
+                &:hover {
+                    transition: $transition;
+                    color: $white
+                }
+            }
+        }
+    }
+
+    @media(max-width:767px) {
+
+        @include flex(space-between, center, column-reverse);
+        padding: 10px 10px;
+
+        article:first-child {
+            @include flex(center, center, column);
+
+            article {
+                @include flex(flex-start, center, column);
+                margin-bottom: 50px;
+
+                div:last-child {
+                    padding: 10px;
+
+                    h4 {
+                        padding-left: 10px;
+                    }
+
+                    p:last-child {
+                        &::after {
+                            @include underline($primary, 20%);
+                            margin: auto;
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        article:last-child {
+
+            .categories {
+                width: 100%;
+                padding: 0;
+                margin-bottom: 10px;
+
+                @include flex(space-between, center, column);
+
+                h4 {
+                    color: $white;
+                    margin: 0;
+                    padding-top: 20px;
+                }
+
+                ul {
+                    @include flex(center, center);
+                    padding-bottom: 20px;
+
+                    ;
+
+                    li {
+                        flex: 0 0 22%;
+
+
+                        a {
+                            font-size: .9rem;
+                            margin-right: 25px;
+
+
+                        }
+                    }
+                }
+            }
         }
     }
 }
